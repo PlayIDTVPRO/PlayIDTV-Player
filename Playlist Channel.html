@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html><head>
+<title>Channel Playlist</title>
+<meta name="viewport"content="width=device-width,initial-scale=1"></meta>
+<script src="https://cdn.radiantmediatechs.com/rmp/5.10.2/js/rmp.min.js"></script>    
+<div class="row">
+<div class="col-sm-12">
+<div class="rmp-playlist-container">
+<div class="rmp-playlist-player-wrapper">
+<div id="rmpPlayer"></div>
+<style>
+body{
+height:100%;
+width:100%;
+margin:0;
+padding:0;
+background:#8A9C99;
+}
+</style>
+</head> 
+
+<!-- { src: 
+{ hls:"#"}, "contentMetadata": 
+{ "title": "#", "description": "#", "thumbnail":"#", "poster": [ "#" ] },}, -->
+   
+<script> var playlistData =  [
+
+{ src: 
+{ hls:"https://ch3-33-web.cdn.byteark.com/live/playlist_720p/index.m3u8"}, 
+"contentMetadata": { 
+"title": "CH3", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/r7duszx06vxnros/ky296jxy.png ", 
+"poster": [ "https://dl.dropboxusercontent.com/s/r7duszx06vxnros/ky296jxy.png " ] },},
+
+{ src: 
+{ hls:"https://tc-live1.sanook.com/live/22302_ch9.m3u8"},
+"contentMetadata": { 
+"title": "MCOT", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/v9a2v8jqca2c8r9/ky298n0w.png", 
+"poster": [ "https://dl.dropboxusercontent.com/s/v9a2v8jqca2c8r9/ky298n0w.png" ] },},
+
+{ src: 
+{ hls:"https://www.livedoomovie.com/02_8HD_720p/chunklist.m3u8"}, 
+"contentMetadata": { 
+"title": "CH8", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/py3oqm552zo4c6a/ky2atmew.png ", 
+"poster": [ "https://dl.dropboxusercontent.com/s/py3oqm552zo4c6a/ky2atmew.png" ] },},
+
+{ src: 
+{ hls:"https://www.livedoomovie.com/02_THAIRATH_720p/chunklist.m3u8"}, 
+"contentMetadata": { 
+"title": "THAIRATH", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/0eotyu9q2m0907s/ky29al3s.png  ", 
+"poster": [ "https://dl.dropboxusercontent.com/s/0eotyu9q2m0907s/ky29al3s.png " ] },},
+
+{ src: 
+{ hls:"https://tc-live1.sanook.com/live/22302_ch5.m3u8"},
+"contentMetadata": { 
+"title": "CH5", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/czmvdfduudcseto/ky297ryd.png", 
+"poster": [ "https://dl.dropboxusercontent.com/s/czmvdfduudcseto/ky297ryd.png" ] },},
+
+{ src: 
+{ hls:"https://www.livedoomovie.com/02_7HD_720p/chunklist.m3u8"}, 
+"contentMetadata": { 
+"title": "CH7", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/fhnqlspsu6x8r0b/ky2atuep.png", 
+"poster": [ "https://dl.dropboxusercontent.com/s/fhnqlspsu6x8r0b/ky2atuep.png" ] },},
+
+{ src: 
+{ hls:"https://www.livedoomovie.com/02_AMARINHD_720p/chunklist.m3u8"}, 
+"contentMetadata": { 
+"title": "AMARIN  HD", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/iuu6j41w3geqcci/ky297cx6.png ", 
+"poster": [ "https://dl.dropboxusercontent.com/s/iuu6j41w3geqcci/ky297cx6.png " ] },},
+
+{ src: 
+{ hls:"https://www.livedoomovie.com/02_PPTVHD_720p/chunklist.m3u8"},
+"contentMetadata": { 
+"title": "PPTVHD", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/m6f5k68odcej5xc/ky299qhk.png", 
+"poster": [ "https://dl.dropboxusercontent.com/s/m6f5k68odcej5xc/ky299qhk.png" ] },},
+
+{ src: 
+{ hls:"https://www.livedoomovie.com/02_GMM_720p/chunklist.m3u8"}, 
+"contentMetadata": { 
+"title": "GMM 25", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/o0d6o1cfscjmmyb/ky297zlc.png", 
+"poster": [ "https://dl.dropboxusercontent.com/s/o0d6o1cfscjmmyb/ky297zlc.png" ] },},
+
+{ src: 
+{ hls:"https://www.livedoomovie.com/02_GMMONE_720p/chunklist.m3u8"}, 
+"contentMetadata": { 
+"title": "ONE  HD", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/42lcvp1u017fvml/ky298f5o.png ", 
+"poster": [ "https://dl.dropboxusercontent.com/s/42lcvp1u017fvml/ky298f5o.png " ] },},
+
+{ src: 
+{ hls:"https://www.livedoomovie.com/02_MONO_720p/chunklist.m3u8"},
+"contentMetadata": { 
+"title": "MONO 29", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/6cp2ssilhk4etej/ky298tzt.png", 
+"poster": [ "https://dl.dropboxusercontent.com/s/6cp2ssilhk4etej/ky298tzt.png" ] },},
+
+{ src: 
+{ hls:"https://www.livedoomovie.com/02_WORKPOINT_720p/chunklist.m3u8"}, 
+"contentMetadata": { 
+"title": "WORKPOINT", 
+"description": "TVDigital", 
+"thumbnail":"https://dl.dropboxusercontent.com/s/7a0lz061ub2tfrj/ky29c046.png  ", 
+"poster": [ "https://dl.dropboxusercontent.com/s/7a0lz061ub2tfrj/ky29c046.png" ] },},
+
+
+
+];var settings = {
+licenseKey: 'Kl8lbz16cz1rN2l2enM9Z2M9NnZvMnllaT9yb201ZGFzaXMzMGRiMEElXyo=',
+skin: 's3',
+posterScaleMode: 'stretch',
+automaticFullscreenOnLandscape: true,
+preload: 'nono',
+playlistUpNextAutoplay: true,
+playlistEndedLoop: false,
+playlistData: playlistData
+};var elementID = 'rmpPlayer'; var rmp = new RadiantMP(elementID); rmp.init(settings); 
+</script> 
+</div>
+</div>
+</div>
+</body> 
+</html>  
